@@ -12,7 +12,7 @@ import {
 
 import SelectCharacter from "./Components/SelectCharacter";
 import Arena from "./Components/Arena";
-import LoadingIndicator from "./Components/LoadingIndicator"
+import LoadingIndicator from "./Components/LoadingIndicator";
 
 // Constants
 const TWITTER_HANDLE = "lakshyaag";
@@ -44,7 +44,6 @@ const App = () => {
 
         setIsLoading(false);
         return;
-
       } else {
         console.log("Metamask found:", ethereum);
 
@@ -111,9 +110,7 @@ const App = () => {
   };
 
   const renderContent = () => {
-
-    if(isLoading) {
-      console.log("Loading indicator should load!");
+    if (isLoading) {
       return <LoadingIndicator />;
     }
 
@@ -161,7 +158,11 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">⚔️ Star Fight Slayer ⚔️</p>
+          <div className="header">
+            <p className="emoji">⚔️</p>
+            <p className="gradient-text"> Star Fight Slayer </p>
+            <p className="emoji">⚔️</p>
+          </div>
           {currentAccount && (
             <p className="connected-address">
               Connected with: {currentAccount}
@@ -169,7 +170,7 @@ const App = () => {
           )}
           <p className="sub-text">Team up to protect the Starworld!</p>
         </div>
-          {renderContent()}
+        {renderContent()}
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a

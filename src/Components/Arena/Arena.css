@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .boss-container .boss-content {
@@ -65,14 +65,14 @@
 }
 
 .health-bar progress[value]::-webkit-progress-bar {
-  background-color: #e5652e;
+  background-color: #dfcdc5;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   overflow: hidden;
 }
 
 .health-bar progress[value]::-webkit-progress-value {
-  background-color: #70cb1b;
+  background-color: #78e611;
 }
 
 .health-bar p {
@@ -151,6 +151,7 @@
 .attack-container button {
   height: 60px;
   font-size: 18px;
+  margin-top: 20px;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;

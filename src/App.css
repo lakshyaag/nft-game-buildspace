@@ -16,13 +16,17 @@
 }
 
 .header {
-  margin: 0;
+  margin: -50px 0px;
   font-size: 50px;
-  font-weight: bold;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
 }
 
 .gradient-text {
+  font-weight: bold;
   background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -89,22 +93,12 @@
   margin-right: 15px;
 }
 
-.opensea-button {
-  background-color: rgb(32, 129, 226);
-}
-
-.mint-count {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 .twitter-logo {
